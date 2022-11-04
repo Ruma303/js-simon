@@ -1,0 +1,35 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+    font-family: 'Roboto',sans-serif;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+}
+
+.container-show {
+    border: 3px solid aquamarine;
+    width: 350px;
+    background-color: darksalmon;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hidden {
+    display: none;
+}
