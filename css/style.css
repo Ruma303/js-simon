@@ -21,7 +21,7 @@ body {
     gap: 1rem;
 }
 
-.container-show {
+#show-container {
     border: 3px solid aquamarine;
     width: 350px;
     background-color: darksalmon;

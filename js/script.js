@@ -1,8 +1,7 @@
-const contShow = document.querySelector('.container-show');
+const showContainer = document.querySelector('#show-container')
 const title = document.querySelector('#title')
 const title2 = document.querySelector('#title2');
 let userNumber = []; //array dei numeri inseriti dall'utente
-
 let arrRandom = []; // array numeri random
 
 title.innerHTML = 'Memorizza questi numeri'; //messaggio iniziale
@@ -17,17 +16,17 @@ for (let i = 0; i <5; i++) {
 }
 //stampare su console e dentro html
 console.log(arrRandom);
-contShow.innerHTML = arrRandom;
+showContainer.innerHTML = arrRandom;
 
-//timer. il tempo PARTE da 0, quindi la pausa è 0
-const idCounter = setTimeout(count, 2000); 
-let counter = 30;
+//timer con counter che parte da 5 (per semplificare)
+const idCounter = setInterval(count, 1000); 
+let counter = 5;
 
 function count(){
     if (counter == 0) {
-        contShow.classList.add('hidden');
-        clearTimeout(idCounter);
-        //qui da inserire il prompt per chiedere i numeri. puoi usare una funzione.
+        showContainer.classList.add('hidden');
+        clearInterval (idCounter);
+        userPush();
     } else {
         console.log(counter);
         title2.innerHTML = `Tempo rimanente: ${counter}s`; //messaggio tempo rimanente
@@ -36,6 +35,12 @@ function count(){
 }
 
 
+//Richiesta dei numeri all'utente
 
-
-// userNumber = parseInt(prompt('Inserisci i numeri'))
+function userPush(){
+for (let i = 0; i < 5; i++) {
+    userNumber.push(parseInt(prompt('Inserisci i numeri')));
+    console.log('numero dell\'utente:', + userNumber[i]);
+}
+console.log('Array dell\'utente: ' + userNumber);
+}
