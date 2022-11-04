@@ -10,7 +10,7 @@ title.innerHTML = 'Memorizza questi numeri'; //messaggio iniziale
 let genNumber = ()=> Math.floor(Math.random() * 10) + 1;
 
 //ciclo per pushare numeri nella array
-for (let i = 0; i <5; i++) {
+for (let i = 0; i < 5; i++) {
     console.log(genNumber());
     arrRandom.push(genNumber());
 }
@@ -47,7 +47,7 @@ console.log('Array dell\'utente: ' + userNumber);
 
 function compareArr() {//Confrontare le array
     for (let i = 0; i < 5; i++) {
-        if (arrRandom.include(userNumber)) {
+        if (arrRandom[i] === userNumber[i]) {
             console.log('Hai trovato il numero: '+ arrRandom[i]);
         } else {
             console.log('Numero non trovato!');
