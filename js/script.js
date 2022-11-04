@@ -25,8 +25,9 @@ let counter = 5;
 function count(){
     if (counter == 0) {
         showContainer.classList.add('hidden');
-        clearInterval (idCounter);
         userPush();
+        compareArr()
+        clearInterval (idCounter);
     } else {
         console.log(counter);
         title2.innerHTML = `Tempo rimanente: ${counter}s`; //messaggio tempo rimanente
@@ -44,12 +45,13 @@ console.log('Array dell\'utente: ' + userNumber);
 }
 
 
-//Confrontare le array
-for (let i = 0; i < 5; i++) {
-    if (arrRandom[i] === userNumber[i]) {
-        console.log('Hai trovato il numero: '+ arrRandom[i]);
+function compareArr() {//Confrontare le array
+    for (let i = 0; i < 5; i++) {
+        if (arrRandom === userNumber) {
+            console.log('Hai trovato il numero: '+ arrRandom[i]);
 
-    } else {
-        console.log('Numero non trovato!')
+        } else {
+            console.log('Numero non trovato!')
+        }
     }
 }
