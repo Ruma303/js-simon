@@ -30,6 +30,21 @@ body {
     font-weight: 700;
 }
 
+
+/* da modificare */
+/*#user-container {
+    border: 3px solid aquamarine;
+    width: 350px;
+    background-color: darksalmon;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}*/
+
 .hidden {
     display: none;
+}
+
+.show {
+    display: block;
 }

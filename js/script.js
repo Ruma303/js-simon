@@ -34,13 +34,22 @@ function count(){
     }
 }
 
-
 //Richiesta dei numeri all'utente
-
 function userPush(){
 for (let i = 0; i < 5; i++) {
     userNumber.push(parseInt(prompt('Inserisci i numeri')));
     console.log('numero dell\'utente:', + userNumber[i]);
 }
 console.log('Array dell\'utente: ' + userNumber);
+}
+
+
+//Confrontare le array
+for (let i = 0; i < 5; i++) {
+    if (arrRandom[i] === userNumber[i]) {
+        console.log('Hai trovato il numero: '+ arrRandom[i]);
+
+    } else {
+        console.log('Numero non trovato!')
+    }
 }
