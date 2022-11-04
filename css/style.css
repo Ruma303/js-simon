@@ -32,14 +32,19 @@ body {
 
 
 /* da modificare */
-/*#user-container {
+#user-container {
     border: 3px solid aquamarine;
     width: 350px;
     background-color: darksalmon;
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
-}*/
+    color:white;
+}
+
+#nums-found{
+    color:red;
+}
 
 .hidden {
     display: none;
