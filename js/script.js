@@ -47,11 +47,10 @@ console.log('Array dell\'utente: ' + userNumber);
 
 function compareArr() {//Confrontare le array
     for (let i = 0; i < 5; i++) {
-        if (arrRandom === userNumber) {
+        if (arrRandom.include(userNumber)) {
             console.log('Hai trovato il numero: '+ arrRandom[i]);
-
         } else {
-            console.log('Numero non trovato!')
+            console.log('Numero non trovato!');
         }
     }
 }
